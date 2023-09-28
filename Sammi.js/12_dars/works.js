@@ -48,6 +48,8 @@ const a = prompt("What is your last watched movie name"),
    d = prompt("How much score can you give");
 
     filmsDB.series[a] = b;
-    filmsDB.series[c] = d,
+    filmsDB.series[c] = d;
+
+   
    
     console.log(filmsDB);
