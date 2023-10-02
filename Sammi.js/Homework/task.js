@@ -1,3 +1,7 @@
+
+
+//Task 3
+
 const numSerial = +prompt('How many serials do you watch in a week?')
 
 if(numSerial <= 5){
@@ -7,3 +11,6 @@ if(numSerial <= 5){
 }else{
     console.log('Best watcher');
 }
+
+//Task1
+
