@@ -142,5 +142,5 @@ function sendRequest(great){
 }
 
 const firstOne = sendRequest("Salom")
-const seconOne =firstOne("Firdavsbek")
+const seconOne =firstOne("Firdavsbek!!")
 const thirdOne = seconOne("Bilaszmi siz eng baxtli insonsz!!")
