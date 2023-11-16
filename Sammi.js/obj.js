@@ -108,21 +108,39 @@ addUser({name:"Damas", location: "Italy"})
 
 
 
-const person = {
-    firstName : "Firdavs",
-    lastName: "Nazarov",
+// getter and setter in js...........................................................................
 
-    get fullName (){
-        return "Hello everyone my name is " + this.firstName + " and my lastname is " + this.lastName
-    },
+// const person = {
+//     firstName : "Firdavs",
+//     lastName: "Nazarov",
 
-    set fullName (value){
-        const [newFirstName, newLastName] = value.split(' ');
-        this.firstName = newFirstName;
-        this.lastName = newLastName;
+//     get fullName (){
+//         return "Hello everyone my name is " + this.firstName + " and my lastname is " + this.lastName
+//     },
+
+//     set fullName (value){
+//         const [newFirstName, newLastName] = value.split(' ');
+//         this.firstName = newFirstName;
+//         this.lastName = newLastName;
+//     }
+// }
+
+// person.fullName = "Javohir Ahmedov"
+
+// console.log(person.fullName);
+
+
+
+// carry function..............................................................
+
+function sendRequest(great){
+    return function (name){
+        return function (message){
+            console.log( `${great}`, `${name}`, `${message}`);
+        }
     }
 }
 
-person.fullName = "Javohir Ahmedov"
-
-console.log(person.fullName);
+const firstOne = sendRequest("Salom")
+const seconOne =firstOne("Firdavsbek")
+const thirdOne = seconOne("Bilaszmi siz eng baxtli insonsz!!")
