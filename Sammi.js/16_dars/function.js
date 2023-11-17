@@ -5,10 +5,26 @@
 
 // introDuction('Firdavs', 'Nazarov')
 
-function calc(a,b) {
-    return a + b
+// function calc(a,b) {
+//     return a + b
+// }
+
+// const resultOfAandB = calc(22.2, 221)
+
+// console.log(resultOfAandB);
+
+
+function first (callback){
+    setTimeout(()=>{
+        console.log(1);
+        callback();
+    }, 800)
 }
 
-const resultOfAandB = calc(22.2, 221)
+function second(){
+    console.log(2);
+}
 
-console.log(resultOfAandB);
+
+first()
+second()
