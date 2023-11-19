@@ -7,7 +7,7 @@ public class Main {
       
     //    System.out.println(num.makeNegative(-10));
 
-       System.out.println(num.hero(12, 6));
+       System.out.println(num.hero(14, 7));
     }
 
  
