@@ -12,13 +12,13 @@ const car = {
 
 const gm = {
     // ...car,
-    isAirbag: false
+    // isAirbag: false
 }
 
 
-const bmw = Object.create(car)
+// const bmw = Object.create(car)
 
-console.log(bmw.isSpeed(90));
+// console.log(bmw.isSpeed(90));
 
 // Object.setPrototypeOf(gm, car)
 // gm.__proto__ = car
@@ -27,3 +27,10 @@ console.log(bmw.isSpeed(90));
 
 // console.log(gm.isSpeed(100));
 
+
+
+function isDigit(s) {
+    return s==parseFloat(s)
+  }
+
+  console.log(isDigit("12  8"));
