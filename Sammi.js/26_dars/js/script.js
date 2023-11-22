@@ -2,7 +2,7 @@
 
 const background = document.querySelector('.promo__bg')
 
-background.style.background = "url('./img/1.jpg') center center / cover no-repeat";
+background.style.backgroundImage = 'url("img/1.jpg")';
 
 const title = document.querySelector('.promo__genre')
 
@@ -16,7 +16,7 @@ promoImg.forEach((element) =>{
 
 
 
-const serialList = document.querySelectorAll('.promo__interactive-item')
+const serialList = document.querySelectorAll('.promo__interactive-list   ')
 
 serialList.forEach((input, index)=>{
  return input[index]
