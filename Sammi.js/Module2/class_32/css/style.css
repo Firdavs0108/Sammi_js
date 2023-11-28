@@ -41,3 +41,8 @@ button {
 .red {
     background-color: red;
 }
+
+.myElement {
+    opacity: 0.7; /* Sets the opacity to 70%, making the element somewhat transparent */
+  }
+  
