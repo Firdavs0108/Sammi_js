@@ -56,7 +56,7 @@ function getTimeRemaining(endtime) {
     
     if (timer <= 0) {
         days = 0,
-        days = 0,
+        hours = 0,
         minutes = 0,
         seconds = 0
     } else{
@@ -103,4 +103,5 @@ function setClock(selector, endtime){
 }
 
 setClock('.timer', deadline)
+
 })
