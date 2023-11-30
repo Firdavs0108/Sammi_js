@@ -106,20 +106,56 @@ setClock('.timer', deadline)
 
 // Modal
 
-const modalTrigger = document.querySelector('[data-modal]'),
+const modalTrigger = document.querySelectorAll('[data-modal]'),
 modal = document.querySelector('.modal'),
 modalCloseBtn = document.querySelector(`[data-close]`)
 
-modalTrigger.addEventListener('click', () => {
-    modal.classList.add('show')
-    modal.classList.remove('hide')
-    document.body.style.overflow = 'hidden'
-})
-
-modalCloseBtn.addEventListener('click', () =>{
+function closeModal(){
     modal.classList.add('hide')
     modal.classList.remove('show')
     document.body.style.overflow = ''
+}
+
+function openModel(){
+    modal.classList.add('show')
+    modal.classList.remove('hide')
+    document.body.style.overflow = 'hidden'
+    clearInterval(modalTimerId)
+}
+
+modalTrigger.forEach((item) => {
+    item.addEventListener('click', openModel)
 })
+
+
+modalCloseBtn.addEventListener('click', closeModal)
+
+modal.addEventListener('click', (e) => {
+    if (e.target == modal) {
+        closeModal()
+    }
+})
+
+document.addEventListener('keydown', (e) => {
+    if(e.code == 'Escape' && modal.classList.contains('show')){
+        closeModal()
+    }
+})
+
+const modalTimerId = setTimeout(openModel, 5000)
+
+function showModalByScroll(){
+    if (window.pageXOffset + document.documentElement.clientHeight  >=
+        document.documentElement.scrollHeight) {
+        
+    }{
+        openModel()
+        window.removeEventListener('scroll', showModalByScroll)
+    }
+}
+
+window.addEventListener('scroll', showModalByScroll)
+
+
 
 })
