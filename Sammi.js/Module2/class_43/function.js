@@ -20,5 +20,5 @@ myCar.prototype.sayHello = function(name){
 const exam = new myCar("bmw", "XM5", 2023,100)
 
 exam.speed(101)
-exam.sayHello("BMW")
+exam.sayHello('BMW')
 // console.log(exam);
