@@ -32,20 +32,18 @@
 // obj.sum()
 
 
-
-
 //this in constructors *******************************************
 
-function myUniversity(name, studentId){
-    this.name = name
-    this.studentId = studentId
-}
+// function myUniversity(name, studentId){
+//     this.name = name
+//     this.studentId = studentId
+// }
 
-myUniversity.prototype.myMajor = function(myName){
-    console.log("Hello everyone. My name is  " + myName+ ". My university name is " + this.name + ". and my studentId is " + this.studentId);
-}
+// myUniversity.prototype.myMajor = function(myName){
+//     console.log("Hello everyone. My name is  " + myName+ ". My university name is " + this.name + ". and my studentId is " + this.studentId);
+// }
 
-const student = new myUniversity("Gachon", 201939164)
+// const student = new myUniversity("Gachon", 201939164)
 
-// console.log(student);
-student.myMajor("Firdavs")
+// // console.log(student);
+// student.myMajor("Firdavs")
