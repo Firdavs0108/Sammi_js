@@ -20,7 +20,7 @@ class Child extends Parent{
     }
 
     calcSpeed(maxSpeed){
-        return maxSpeed <=100 ? "This is university area. Keep speed limit " : "This is university area. Your speed must under 100"
+        return maxSpeed <=100 ? "This is university area. Keep speed limit, Mr " + this.name : "This is university area. Your speed must under 100. Now you are under police officers Mr " + this.name
         
     }
 } 
@@ -33,4 +33,4 @@ console.log(driver.calcSpeed(200));
 const driver2 = new Child("merc", "white", 20, true)
 
 console.log(driver2);
-console.log(driver2.calcSpeed(100.0));
+console.log(driver2.calcSpeed(100.1));
