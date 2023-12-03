@@ -1,0 +1,36 @@
+
+'use strict'
+
+class Parent{
+    constructor(name, color, speed){
+        this.name = name
+        this.color = color
+        this.speed = speed
+    }
+
+    calcSpeed(maxSpeed){
+        return maxSpeed <=50 ? "This is school area. Keep speed limit " : "This is school area. Your speed must under 50"
+    }
+}
+
+class Child extends Parent{
+    constructor(name,color, speed, isAirbag){
+        super(name,color,speed)
+        this.isAirbag = isAirbag
+    }
+
+    calcSpeed(maxSpeed){
+        return maxSpeed <=100 ? "This is university area. Keep speed limit " : "This is university area. Your speed must under 100"
+        
+    }
+} 
+
+const driver = new Parent('BMW', "BLACK", 100)
+
+console.log(driver);
+console.log(driver.calcSpeed(200));
+
+const driver2 = new Child("merc", "white", 20, true)
+
+console.log(driver2);
+console.log(driver2.calcSpeed(100.0));
