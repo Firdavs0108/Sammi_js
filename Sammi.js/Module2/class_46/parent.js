@@ -27,10 +27,24 @@ class Child extends Parent{
 
 const driver = new Parent('BMW', "BLACK", 100)
 
-console.log(driver);
-console.log(driver.calcSpeed(200));
+// console.log(driver);
+// console.log(driver.calcSpeed(200));
 
 const driver2 = new Child("merc", "white", 20, true)
 
-console.log(driver2);
-console.log(driver2.calcSpeed(100.1));
+// console.log(driver2);
+// console.log(driver2.calcSpeed(100.1));
+
+
+function logger (a,b, ...rest){
+    console.log(a,b,rest);
+}
+
+logger(1,2,7,8,9)
+
+
+function example (number, def = 10){
+    console.log(number + def);
+}
+
+example(12)
