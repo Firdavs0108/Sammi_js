@@ -38,5 +38,13 @@
 
 //Reduce........................................................
 
-// const numbers = [1,2,45,67,8]
-// console.log(numbers.reduce((sum, num) => sum + num + 20 ));
+const numbers = [1,2,45,67,8]
+console.log(numbers.reduce((sum, num) => sum + num,23 ));
+
+// const greeting = ['Hello ','World!', ' Welcome to ']
+
+// console.log(greeting.reduce((first, second) => second + first, "Tashkent" ));
+
+// const greeting = ['Hello ', 'World!', ' Welcome to '];
+
+// console.log(greeting.reduce((accumulator, current) => accumulator + current, '') + "Tashkent!");
