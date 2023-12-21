@@ -41,8 +41,6 @@
 
 // ******************************************************************************************
 
-
-
 // \d  =>  only for numbers
 // \w  =>  only for words
 // \s  =>  only for 
@@ -53,9 +51,24 @@
 // \S  =>  not a space   // true and false
 
 
+
+
+//example for \s *******************************************************************
+
+// const name = prompt('What is your name')
+
+// const regexp = /\s/gi
+
+// console.log(regexp.test(name));
+
+
+
+// example for \w *******************************************************************
+
 const name = prompt('What is your name')
 
-const regexp = /\s/gi
+const regexp = /\w/gi
 
-console.log(regexp.test(name));
+console.log(name.match(regexp));
+
 
