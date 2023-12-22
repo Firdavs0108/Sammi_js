@@ -33,3 +33,5 @@ bmw.name = 'ford'
 bmw.info()
 
 
+export default Car
+
